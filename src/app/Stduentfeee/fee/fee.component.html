@@ -1,0 +1,37 @@
+<button class="btn btn-danger btn-circle btn-sm" (click)="x()" style="margin-left: 95%;">X</button>
+<div class="raj">
+    <dl>
+        <dd>
+            ID
+        </dd>
+        <dt>
+            {{shiva.ID}}
+        </dt>
+        <dd>
+            Total
+        </dd>
+        <dt>
+            {{shiva.Total_fee|currency:'INR'}}
+        </dt>
+        <dd>
+            Amount Paid
+        </dd>
+        <dt>
+            {{shiva.Amount_paid|currency:'INR'}}
+        </dt>
+        <dd>
+            Pending
+        </dd>
+        <dt>
+            {{shiva.Pending_fee|currency:'INR'}}
+        </dt>
+        <dd>
+           Status
+        </dd>
+        <dt>
+            {{shiva.fee_status|uppercase}}
+        </dt>
+        
+      
+    </dl>
+</div>

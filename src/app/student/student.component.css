@@ -1,0 +1,41 @@
+/*
+.A
+{
+    margin: 10% 30% 10% 35%;
+    border:2px solid black;
+    padding: 5%;
+    background-color:gray
+    
+}
+.A,dt
+{
+    color:white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.A,dd
+{
+    color:rgb(34, 45, 196);
+}
+img
+{
+    height: 150px;
+    width: 150px;
+    margin-left: 20%;
+}*/
+
+
+.A
+{
+background:rgba(255, 166, 0, 0.507)
+}
+.A,dd{
+    color:brown;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times;
+}
+.A,dt
+{
+    color:blue;
+}

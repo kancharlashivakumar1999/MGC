@@ -1,0 +1,44 @@
+
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+   
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+     
+    </div>
+    <div class="b">
+
+      <!-- <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+        <img src="../assets/R.gif">
+
+
+      </button> -->
+    </div>
+    <span>
+        <button mat-button routerLink="/" ></button>
+      </span>
+      <span style="margin-left: 25%;">{{x}}</span>
+  </mat-toolbar>
+  
+
+  <img src="../assets/v2.jpg" alt="logo here" style="margin: 3% 30% 0 40%;">
+  <dl>
+    <dt style="margin-left: 43%; margin-top: 3%; ">
+    <h3 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">  WELCOME <h1 style=" font-weight: bold; color:red" >{{f.Name|uppercase}}</h1> </h3>
+    </dt>
+  </dl>
+  <div>
+    
+  </div>
+  <div class="G" style="margin: 3% 20% 0% 40%;">
+   
+        <button type="button" class="btn btn-primary" style="margin-right:50px;" (click)="open()" >
+          MARKS
+        </button>
+        <button type="button" class="btn btn-success" (click)="fee()">
+            FEE DETAILS
+        </button>
+   
+  </div>
+  <button type="button" class="btn btn-danger" (click)="out()" style="margin-left: 45%; margin-top: 3%;">
+    Log out
+</button>

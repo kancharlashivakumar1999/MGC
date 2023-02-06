@@ -1,0 +1,42 @@
+
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+   
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+     
+    </div>
+    <div class="b">
+
+      <!-- <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+        <img src="../assets/R.gif">
+
+
+      </button> -->
+    </div>
+    <span>
+        <button mat-button routerLink="/" ></button>
+      </span>
+      <span style="margin-left: 10%;">{{x}}</span>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item routerLink="/Admin">
+        
+        <mat-icon>account_balance</mat-icon>
+     Admin
+    </button>
+    <button mat-menu-item routerLink="/student_log">
+        <mat-icon>perm_identity</mat-icon>
+     Student
+    </button>
+    
+  
+  </mat-menu>
+  <div class="A">
+    <h1 style="font-weight: bold; color: blue;">WELCOME TO VAAGDEVI COLLEGES</h1>
+    
+ <img src="../assets/v2.jpg" alt="image vundali">
+ <div class="g">
+    <button class="btn btn-primary" mat-button [mat-menu-trigger-for]="menu" style="margin-left: 33%; margin-top: 50px;" >Select</button>
+  </div>
+  </div>
+ 

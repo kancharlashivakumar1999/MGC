@@ -1,0 +1,29 @@
+
+<form [formGroup]="Aloginform">
+    <div class="wrapper">
+        <div class="logo">
+            <img src="../assets/Admin.png">
+            
+        </div><br><br>
+      
+        <div class="text-center mt-4 name">
+            Admin
+        </div><br>
+        <form class="p-3 mt-3">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="UserName" id="UserName" placeholder="UserName" formControlName="UserName">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="ID" id="ID" placeholder="ID" formControlName="ID">
+            </div>
+    
+            <button type="button"  class="btn mt-3" (click)="onlog()">Login</button>
+        </form>
+        <div class="text-center fs-6">
+             <a href="#">Forget password?</a>
+        </div>
+    </div>
+</form>
+

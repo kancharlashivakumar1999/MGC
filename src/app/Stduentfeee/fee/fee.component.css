@@ -1,0 +1,13 @@
+.raj
+{
+background:rgba(255, 166, 0, 0.507)
+}
+.raj,dd{
+    color:brown;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times;
+}
+.raj,dt
+{
+    color:blue;
+}

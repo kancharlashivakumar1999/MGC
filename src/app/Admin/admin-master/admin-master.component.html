@@ -1,0 +1,60 @@
+
+
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+   
+    <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+     
+    </div>
+    <div class="b">
+
+      <!-- <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+        <img src="../assets/R.gif">
+
+
+      </button> -->
+    </div>
+    <span>
+        <button mat-button routerLink="/" ></button>
+      </span>
+      <span style="margin-left: 10%;">{{x}}</span>
+      <button type="button" class="btn btn-danger btn-circle btn-sm" (click)="log()" style="margin-left: 20%;">    <mat-icon>power_settings_new</mat-icon>
+      </button>
+
+      
+  </mat-toolbar>
+  <div class="Search">
+    <input type="search" placeholder="search" style="margin-top: 30px;" (keyup)="search($event)"> <mat-icon>search</mat-icon> 
+    <button type="button" class="btn btn-primary" style="margin-left: 60%; margin-top: 30px;" (click)="Add()">Add</button>
+
+  </div>
+  <div class="mat-elvation-z8">
+    <table mat-table [dataSource]="Dloginform" class="table table-striped" matSort>
+        <!-- <ng-container matColumnDef="Sno">
+            <th  mat-header-cell *matHeaderCellDef  mat-sort-header sortActionDescription="Sort by number">Sno</th>
+            <td mat-cell *matCellDef="let element" >{{element.Sno}}</td>
+        </ng-container> -->
+        <ng-container matColumnDef="ID">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header  sortActionDescription="Sort by number">ID</th>
+          <td mat-cell *matCellDef="let element" >{{element.ID}}</td>
+      </ng-container>
+        <ng-container matColumnDef="Name">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header  sortActionDescription="Sort by name">Name</th>
+          <td mat-cell *matCellDef="let element" >{{element.Name}}</td>
+      </ng-container>
+    
+    
+  
+  <ng-container matColumnDef="Action">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header style="margin-left: 10%;">Action</th>
+    <td mat-cell *matCellDef="let row"><button mat-raised-button class="btn btn-primary" (click)="view(row)" style="margin-right: 30px; margin-left: 30px;">Marks</button>
+    </td>
+  </ng-container>
+  
+  <tr mat-header-row *matHeaderRowDef="columns">
+  
+  </tr>
+  <tr mat-row *matRowDef="let row; columns:columns;"></tr>
+    </table>
+  </div> 
+  
