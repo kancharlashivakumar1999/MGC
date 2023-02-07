@@ -28,7 +28,7 @@ this.sk(this.ser.isUser)
   }
   fee()
   {
-    this.Mat.open(FeeComponent,{height:'40%',width:'30%'})
+    this.Mat.open(FeeComponent,{height:'60%',width:'30%'})
 
   }
   out()

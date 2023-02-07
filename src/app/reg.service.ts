@@ -50,4 +50,12 @@ export class RegService {
    {
       return this.http.get(`https://localhost:44390/api/Admin/fee/${ID}`)
    }
+   block(ID:any)
+   {
+      return this.http.get(`https://localhost:44390/api/Admin/block/${ID}`)
+   }
+   unblock(ID:any)
+   {
+    return this.http.get(`https://localhost:44390/api/Admin/Unblock/${ID}`)
+   }
 }

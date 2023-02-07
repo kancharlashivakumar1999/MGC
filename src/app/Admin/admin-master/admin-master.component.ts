@@ -5,6 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { RegService } from 'src/app/reg.service';
 import { StudentComponent } from 'src/app/student/student.component';
+import { BlockComponent } from '../block/block.component';
 import { MarksComponent } from '../marks/marks.component';
 
 @Component({
@@ -29,10 +30,16 @@ export class AdminMasterComponent implements OnInit {
     this.dis.List().subscribe((a:any)=>{this.Dloginform=new MatTableDataSource(a); 
       this.Dloginform.sort=this.Sort;})
   }
+
   log()
   {
     this.r.navigate(['']);
   }
+  block(ID:any)
+  {
+    this.dia.open(BlockComponent, {height:'60%',width:'40%',data:ID})
+  }
+  
   Add()
   {
     this.dia.open(MarksComponent,{height:'100%',width:'30%'})

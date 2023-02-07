@@ -16,6 +16,7 @@ import { AdminMasterComponent } from './Admin/admin-master/admin-master.componen
 import { MarksComponent } from './Admin/marks/marks.component';
 import { StudenthomeComponent } from './Stduentfeee/studenthome/studenthome.component';
 import { FeeComponent } from './Stduentfeee/fee/fee.component';
+import { BlockComponent } from './Admin/block/block.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FeeComponent } from './Stduentfeee/fee/fee.component';
     MarksComponent,
     StudenthomeComponent,
     FeeComponent,
+    BlockComponent,
   ],
   imports: [
     BrowserModule,
